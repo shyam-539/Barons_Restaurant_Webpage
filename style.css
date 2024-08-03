@@ -1,0 +1,193 @@
+/* General body styling */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e3e3e; /* Dark grey */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling within navbar */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5; /* Light grey */
+    font-size: 1.5em;
+}
+
+/* Navigation links styling */
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5; /* Light grey */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #a65d1e; /* Warm brown */
+}
+
+/* Authentication links styling */
+.navbar .auth-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: url('./img/Hero.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+/* Hero buttons styling */
+.hero-buttons .btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #a65d1e; /* Warm brown */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #8a4a28; /* Darker brown */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Services section styling */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Services grid layout */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Service card styling */
+.service-card {
+    border: none; /* Removed border for a cleaner look */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 360px; /* Centered and limited card width */
+}
+
+/* Card image styling */
+.service-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    border-bottom: 3px solid #a65d1e; /* Warm brown */
+}
+
+/* Card heading styling */
+.service-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    color: #a65d1e; /* Warm brown */
+    font-size: 1.6em; /* Adjusted heading size */
+}
+
+/* Card description styling */
+.service-card p {
+    font-family: 'Lora', serif;
+    color: #666; /* Darker grey for text */
+    margin: 0 15px 20px; /* Added bottom margin */
+    padding: 0;
+}
+
+/* Card button styling */
+.service-card .btn {
+    display: inline-block;
+    background-color: #a65d1e; /* Warm brown */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.service-card .btn:hover {
+    background-color: #8a4a28; /* Darker brown */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Card hover effect */
+.service-card:hover {
+    background-color: #f9f9f9; /* Light grey background on hover */
+    transform: translateY(-10px); /* Lift card effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}

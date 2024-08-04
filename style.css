@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3e3e3e; /* Dark grey */
+    background-color: #1a1a1a; 
     padding: 10px 20px;
     position: sticky;
     top: 0;
@@ -31,8 +31,8 @@ body {
 }
 
 .navbar .logo span {
-    font-family: 'Montserrat', sans-serif;
-    color: #f5f5f5; /* Light grey */
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff; 
     font-size: 1.5em;
 }
 
@@ -43,8 +43,8 @@ body {
 }
 
 .navbar a {
-    font-family: 'Montserrat', sans-serif;
-    color: #f5f5f5; /* Light grey */
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff; 
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 4px;
@@ -52,7 +52,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #a65d1e; /* Warm brown */
+    background-color: #db4e3c; 
 }
 
 /* Authentication links styling */
@@ -66,7 +66,7 @@ body {
     position: relative;
     text-align: center;
     color: #fff;
-    background: url('./img/Hero.png') no-repeat center center;
+    background: url('./img/hero.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -75,13 +75,13 @@ body {
 }
 
 .hero-text h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 3em;
     margin: 0;
 }
 
 .hero-text p {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5em;
 }
 
@@ -91,8 +91,8 @@ body {
 
 /* Hero buttons styling */
 .hero-buttons .btn {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #a65d1e; /* Warm brown */
+    font-family: 'Rubik', sans-serif;
+    background-color: #db4e3c; 
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -102,92 +102,100 @@ body {
 }
 
 .hero-buttons .btn:hover {
-    background-color: #8a4a28; /* Darker brown */
-    transform: scale(1.05); /* Slightly enlarges button on hover */
+    background-color: #a12f29; 
+    transform: scale(1.05); 
 }
 
-/* Services section styling */
-.services {
+/* Products section styling */
+.products {
     text-align: center;
     padding: 50px 20px;
     background-color: #fff;
 }
 
-.services h2 {
-    font-family: 'Montserrat', sans-serif;
+.products h2 {
+    font-family: 'Rubik', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Services grid layout */
-.service-grid {
+/* Products grid layout */
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 0 20px;
 }
 
-/* Service card styling */
-.service-card {
-    border: none; /* Removed border for a cleaner look */
-    border-radius: 10px; /* Rounded corners */
+/* Product card styling */
+.product-card {
+    border: none; 
+    border-radius: 10px; 
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow for depth */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     background-color: #fff;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
     padding: 20px;
     margin: 0 auto;
-    max-width: 360px; /* Centered and limited card width */
+    max-width: 360px; 
+}
+
+/* Add hover effect for product cards */
+.product-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+    background-color: #f9f9f9; 
 }
 
 /* Card image styling */
-.service-card img {
+.product-card img {
     width: 100%;
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
-    border-bottom: 3px solid #a65d1e; /* Warm brown */
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 3px solid #db4e3c; 
 }
 
 /* Card heading styling */
-.service-card h3 {
-    font-family: 'Montserrat', sans-serif;
+.product-card h3 {
+    font-family: 'Rubik', sans-serif;
     margin: 20px 0;
-    color: #a65d1e; /* Warm brown */
-    font-size: 1.6em; /* Adjusted heading size */
+    color: #db4e3c; 
+    font-size: 1.6em; 
 }
 
 /* Card description styling */
-.service-card p {
-    font-family: 'Lora', serif;
-    color: #666; /* Darker grey for text */
-    margin: 0 15px 20px; /* Added bottom margin */
+.product-card p {
+    font-family: 'Lato', sans-serif;
+    color: #666; 
+    margin: 0 15px 20px; 
     padding: 0;
 }
 
+/* Price styling */
+.product-card .price {
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
 /* Card button styling */
-.service-card .btn {
+.product-card .btn {
     display: inline-block;
-    background-color: #a65d1e; /* Warm brown */
+    background-color: #db4e3c; 
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 6px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
     transition: background-color 0.3s, transform 0.3s;
     margin-top: 10px;
-    font-size: 1em; /* Adjusted font size */
+    font-size: 1em; 
 }
 
-.service-card .btn:hover {
-    background-color: #8a4a28; /* Darker brown */
-    transform: scale(1.05); /* Slight scale effect on hover */
-}
-
-/* Card hover effect */
-.service-card:hover {
-    background-color: #f9f9f9; /* Light grey background on hover */
-    transform: translateY(-10px); /* Lift card effect */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+.product-card .btn:hover {
+    background-color: #a12f29; 
+    transform: scale(1.05); 
 }
